@@ -5,7 +5,7 @@ switch (word) {
       console.log("You entered stop");
       break;
   default:
-    words.push(word)
+    words.concat(word)
     break;
 }
 console.log("You entered the following words:" (words));
