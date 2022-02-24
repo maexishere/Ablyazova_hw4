@@ -1,22 +1,21 @@
-<script>
-  var op;
-  function calc() {
-    var result;
-    var num1 = Number(document.getElem("num1").value);
-    var num2 = Number(document.getElem("num2").value);
-    switch (op) {
-      case "+":
-        result = num1 + num2;
-        break
-      case "-":
-        result = num1 - num2;
-        break
-      case "*":
-        result = num1 - num2;
-        break
-      case "/":
-        result = num1 / num2;
-        break
-    }
-  }
-</script>
+const num1 = Number(prompt("Number 1: "));
+const num2 = Number(prompt("Number 2: "));
+const op = prompt("Operation");
+switch (op) {
+  case "+":
+    result = num1 + num2;
+    break;
+  case "-":
+    result = num1 - num2;
+    break;
+  case "*":
+    result = num1 * num2;
+    break;
+  case "/":
+    result = num1 / num2
+    break;
+  default:
+    console.log("Invalid")
+    break;
+}
+console.log(`${num1} ${op} ${num2} = ${result}`)
